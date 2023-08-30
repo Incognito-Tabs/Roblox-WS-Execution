@@ -1,7 +1,12 @@
 local Services 						= setmetatable({}, { __index = function(Self, Key) return game.GetService(game, Key) end })
 local Client 						= Services.Players.LocalPlayer
+local Executor 						= identifyexecutor()
+local SMethod 						= (string.find(Executor, "Krnl UWP") and WebSocket.connect) or (string.find(Executor, "Fluxus UWP") and WebSocket.connect) or (string.find(Executor, "Oxygen U UWP") and WebSocket.connect) or (string.find(Executor, "Sirhurt") and WebSocket.connect) or (string.find(Executor, "Synapse") and syn.websocket.connect)
+
+if not SMethod then return Client:Kick("Executor is too shitty.") end
+
 local Main 							= function()
-	local Success, WebSocket 		= pcall(WebSocket.connect, "ws://localhost:9000/")
+	local Success, WebSocket 		= pcall(SMethod, "ws://localhost:9000/")
 
 	if not Success then return end
 
@@ -29,8 +34,6 @@ local Main 							= function()
 end
 
 while task.wait(1) do
-	print("Rerun: Test")
-
 	local Success, Error 			= pcall(Main)
 	if not Success then print(Error) end
 end
