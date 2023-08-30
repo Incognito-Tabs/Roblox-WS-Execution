@@ -18,8 +18,6 @@ App.all("/", (Request, Respond) => {
 })
 
 App.ws("/", (WS, Request) => {
-	VSCode.window.showInformationMessage("connected")
-
 	WS.on("message", (Unparsed: string) => {
 		const Parsed 				= (() => { try { return JSON.parse(Unparsed) } catch (Error) { return false } })()
 
@@ -29,8 +27,9 @@ App.ws("/", (WS, Request) => {
 		if (Parsed.Method === "Authorization") {
 			const Check 			= Connections.find(Connection => Connection.Name === Parsed.Name)
 
-			if (Check) { return Check.WS = WS }
+			if (Check) { VSCode.window.showInformationMessage(`Updated WS for ${Parsed.Name}.`); return Check.WS = WS }
 
+			VSCode.window.showInformationMessage(`User ${Parsed.Name} Connected.`)
 			Connections.push({ WS: WS, Name: Parsed.Name })
 		}
 

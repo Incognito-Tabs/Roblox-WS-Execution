@@ -1,7 +1,9 @@
 local Services 						= setmetatable({}, { __index = function(Self, Key) return game.GetService(game, Key) end })
 local Client 						= Services.Players.LocalPlayer
 local Main 							= function()
-	local WebSocket 				= WebSocket.connect("ws://localhost:9000/")
+	local Success, WebSocket 		= pcall(WebSocket.connect, "ws://localhost:9000/")
+
+	if not Success then return end
 
 	WebSocket:Send(Services.HttpService:JSONEncode({
 		Method						= "Authorization",
@@ -26,10 +28,9 @@ local Main 							= function()
 	WebSocket.OnClose:Wait()
 end
 
-while task.wait() do
-	local Success, Error 			= pcall(Main)
+while task.wait(1) do
+	print("Rerun: Test")
 
-	if not Success then
-		print(Error)
-	end
+	local Success, Error 			= pcall(Main)
+	if not Success then print(Error) end
 end
