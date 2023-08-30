@@ -1,7 +1,6 @@
 local Services 						= setmetatable({}, { __index = function(Self, Key) return game.GetService(game, Key) end })
 local Client 						= Services.Players.LocalPlayer
-
-function Main()
+local Main 							= function()
 	local WebSocket 				= WebSocket.connect("ws://localhost:9000/")
 
 	WebSocket:Send(Services.HttpService:JSONEncode({
