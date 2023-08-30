@@ -2,6 +2,7 @@
   "name": "roblox-ws-server",
   "displayName": "Roblox WS Execution",
   "description": "Code Exection from VSC from any Executor.",
+  "publisher": "incognito-developer",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.81.0"
@@ -24,6 +25,10 @@
         "title": "RWS: Debug"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lncoognito/Roblox-WS.git"
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
@@ -51,6 +56,7 @@
     "@types/express-ws": "^3.0.1",
     "express": "^4.18.2",
     "express-ws": "^5.0.2",
+    "vsce": "^2.15.0",
     "websocket": "^1.0.34"
   }
 }
