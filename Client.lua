@@ -1,7 +1,7 @@
 local Services 						= setmetatable({}, { __index = function(Self, Key) return game.GetService(game, Key) end })
 local Client 						= Services.Players.LocalPlayer
 local Executor 						= identifyexecutor()
-local SMethod 						= (string.find(Executor, "Krnl UWP") and WebSocket.connect) or (string.find(Executor, "Fluxus UWP") and WebSocket.connect) or (string.find(Executor, "Oxygen U UWP") and WebSocket.connect) or (string.find(Executor, "Sirhurt") and WebSocket.connect) or (string.find(Executor, "Synapse") and syn.websocket.connect)
+local SMethod 						= (string.find(Executor, "Krnl") and WebSocket.connect) or (string.find(Executor, "Fluxus UWP") and WebSocket.connect) or (string.find(Executor, "Oxygen U UWP") and WebSocket.connect) or (string.find(Executor, "Sirhurt") and WebSocket.connect) or (string.find(Executor, "Synapse") and syn.websocket.connect)
 
 if not SMethod then return Client:Kick("Executor is too shitty.") end
 
