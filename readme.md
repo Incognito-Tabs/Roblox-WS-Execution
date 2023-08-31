@@ -4,26 +4,6 @@ Roblox WS Execution is an extension designed for Roblox executors that support W
 
 Imagine the countless hours saved by eliminating the need to manually copy and paste code between your development environment and the executor. With Roblox WS Execution, you can focus your energy on crafting, testing, and perfecting your code rather than dealing with repetitive copy-paste actions.
 
-## Multi-Account Support
-
-Roblox WS Execution goes above and beyond by offering seamless support for multiple accounts. If you engage in multi-Roblox instances and manage multiple accounts, this feature is tailored for you. With Roblox WS Execution's multi-account support, you can effortlessly execute code across various game instances while maintaining a smooth and organized experience.
-
-### Using Multi-Account Support
-
-Using the multi-account feature is as intuitive as the standard "WS Execute" button:
-
-1. Launch your Roblox game within the executor as usual.
-2. Ensure the game is fully loaded, ready for your creative process.
-3. Click on the "WS Execute" button, which triggers a drop-down menu displaying a list of connected usernames.
-
-   ![WS Execute Button](https://i.imgur.com/ipzfCf2.png)
-
-4. Choose the account under which you want to execute the code from the list. After selecting the desired account, the extension will execute the Lua code associated with that account.
-
-   ![Connected Usernames](https://i.imgur.com/t7xmFi8.png)
-
-Managing multiple accounts and executing code in various game instances has never been smoother. No more juggling separate executors or dealing with tedious setups—Roblox WS Execution streamlines the process for you.
-
 ## Installation
 
 To harness the power of Roblox WS Execution, follow these simple steps:
@@ -51,6 +31,34 @@ To harness the power of Roblox WS Execution, follow these simple steps:
 
 4. The seamless execution process is now set up, eliminating the need for manual script location and execution.
 
+## Multi-Account Support
+
+Roblox WS Execution goes above and beyond by offering seamless support for multiple accounts. If you engage in multi-Roblox instances and manage multiple accounts, this feature is tailored for you. With Roblox WS Execution's multi-account support, you can effortlessly execute code across various game instances while maintaining a smooth and organized experience.
+
+* Please note that multiple account support only works with Electron since no other executors currently support multiple Roblox instances [to my knowledge].
+
+### Using Multi-Account Support
+
+Using the multi-account feature is as intuitive as the standard "WS Execute" button:
+
+1. Launch your Roblox game within the executor as usual.
+2. Ensure the game is fully loaded, ready for your creative process.
+3. Click on the "WS Execute" button, which triggers a drop-down menu displaying a list of connected usernames.
+
+   ![WS Execute Button](https://i.imgur.com/ipzfCf2.png)
+
+4. Choose the account under which you want to execute the code from the list. After selecting the desired account, the extension will execute the Lua code associated with that account.
+
+   ![Connected Usernames](https://i.imgur.com/t7xmFi8.png)
+
+Managing multiple accounts and executing code in various game instances has never been smoother. No more juggling separate executors or dealing with tedious setups—Roblox WS Execution streamlines the process for you.
+
+## Video Installation Guide
+
+For a visual walkthrough of the installation process, watch this video:
+
+   [![Installation Video](https://img.youtube.com/vi/T0Uw68Q81tU/mqdefault.jpg)](https://www.youtube.com/watch?v=T0Uw68Q81tU)
+
 ## Effortless Usage
 
 Roblox WS Execution's user-friendly interface makes execution a breeze:
@@ -71,12 +79,4 @@ Roblox WS Execution's user-friendly interface makes execution a breeze:
 
 - Exercise caution when executing code and rely solely on scripts from trusted sources.
 
-- If you encounter any issues, feel free to contact me on Discord (@incognito.tab) and report the problem. I'll be happy to assist and address any concerns.
-
-## Legal Disclaimer
-
-Roblox WS Execution is provided on an "as-is" basis and is not officially endorsed by Roblox Corporation. Use it at your own discretion and risk.
-
-## License
-
-This project is licensed under the MIT License.
+- If you encounter any issues, feel free to contact me on Discord [@incognito.tab] and report the problem. I'll be happy to assist and address any concerns.
