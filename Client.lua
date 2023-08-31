@@ -7,6 +7,7 @@ if not SMethod then return Client:Kick("Executor is too shitty.") end
 
 local Main 							= function()
 	local Success, WebSocket 		= pcall(SMethod, "ws://localhost:9000/")
+    local Closed                    = false
 
 	if not Success then return end
 
@@ -30,7 +31,14 @@ local Main 							= function()
 		end
 	end)
 
-	WebSocket.OnClose:Wait()
+    -- i fucking hate you electron
+	-- WebSocket.OnClose:Wait()
+
+	WebSocket.OnClose:Connect(function()
+        Closed                       = true
+    end)
+
+    repeat task.wait() until Closed
 end
 
 while task.wait(1) do
