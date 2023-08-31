@@ -8,7 +8,7 @@ Imagine the countless hours saved by eliminating the need to manually copy and p
 
 To harness the power of Roblox WS Execution, follow these simple steps:
 
-1. Download and install the Roblox WS Server extension for Visual Studio Code from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=incognito-developer.roblox-ws-server&ssr=false#version-history).
+1. Install the Roblox WS Server extension for Visual Studio Code from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=incognito-developer.roblox-ws-server&ssr=false#version-history).
 
 2. Ensure you have a Roblox executor that supports WebSocket connections.
 
