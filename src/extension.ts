@@ -14,18 +14,25 @@ const Connections: any[]					= []
 const App 									= WebSocket(Express()).app
 
 App.all("/", (Request, Respond) => {
-	Respond.end("Works...")
+	Respond.end("Roblox WS Execution")
 })
 
 App.ws("/", (WS, Request) => {
+	setTimeout(() => {
+		if (Connections.some(Connection => Connection.WS === WS)) return
+
+		WS.close()
+		VSCode.window.showInformationMessage(`Connected user failed to authenticate, Closing connection..`)
+	}, 500)
+
 	WS.on("message", (Unparsed: string) => {
-		const Parsed 				= (() => { try { return JSON.parse(Unparsed) } catch (Error) { return false } })()
+		const Parsed 						= (() => { try { return JSON.parse(Unparsed) } catch (Error) { return false } })()
 
 		if (!Parsed) return WS.send(JSON.stringify({ ["Code"]: 10 }))
 		if (!Parsed.Method) return WS.send(JSON.stringify({ ["Code"]: 20 }))
 
 		if (Parsed.Method === "Authorization") {
-			const Check 			= Connections.find(Connection => Connection.Name === Parsed.Name)
+			const Check 					= Connections.find(Connection => Connection.Name === Parsed.Name)
 
 			if (Check) { VSCode.window.showInformationMessage(`Updated WS for ${Parsed.Name}.`); return Check.WS = WS }
 
@@ -41,8 +48,12 @@ App.ws("/", (WS, Request) => {
 	})
 
 	WS.on("close", () => {
-		console.log("WebSocket disconnected.")
-		Connections.splice(Connections.findIndex(Connection => Connection.WS === WS), 1)
+		const Index 						= Connections.findIndex(Connection => Connection.WS === WS)
+
+		if (Index == -1) return
+
+		Connections.splice(Index, 1)
+		console.log("WebSocket Disconnected.")
 	})
 })
 
