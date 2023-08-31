@@ -8,13 +8,15 @@ Imagine the countless hours saved by eliminating the need to manually copy and p
 
 To harness the power of Roblox WS Execution, follow these simple steps:
 
-1. Ensure you have a Roblox executor that supports WebSocket connections.
+1. Download and install the Roblox WS Server extension for Visual Studio Code from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=incognito-developer.roblox-ws-server&ssr=false#version-history).
 
-2. Create a new text file within your executor's autoexec folder. The filename is unimportant.
+2. Ensure you have a Roblox executor that supports WebSocket connections.
+
+3. Create a new text file within your executor's autoexec folder. The filename is unimportant.
 
    ![Create New Text File](https://i.imgur.com/rkpnrDq.png)
 
-3. Open the newly created text file and paste the provided Lua code snippet:
+4. Open the newly created text file and paste the provided Lua code snippet:
 
    ![Paste Lua Code](https://i.imgur.com/wOYSx1f.png)
 
@@ -29,7 +31,7 @@ To harness the power of Roblox WS Execution, follow these simple steps:
    Function()
    ```
 
-4. The seamless execution process is now set up, eliminating the need for manual script location and execution.
+5. The seamless execution process is now set up, eliminating the need for manual script location and execution.
 
 ## Multi-Account Support
 
