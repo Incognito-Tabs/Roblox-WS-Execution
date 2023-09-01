@@ -17,7 +17,8 @@ const App 									= WebSocket(Express()).app
 App.use(Helmet.contentSecurityPolicy({
 	directives: {
 		defaultSrc: ["'self'"],
-		scriptSrc: ["'self'", "'unsafe-inline'"],
+		scriptSrc: ["'self'"],
+		connectSrc: ["'self'", "ws://localhost:9000"]
 	},
 }))
 
