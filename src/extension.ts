@@ -1,6 +1,7 @@
 import VSCode from "vscode"
 import Express from "express"
 import WebSocket from "express-ws"
+import Helmet from "helmet"
 
 /*
 
@@ -12,6 +13,13 @@ import WebSocket from "express-ws"
 
 const Connections: any[]					= []
 const App 									= WebSocket(Express()).app
+
+App.use(Helmet.contentSecurityPolicy({
+	directives: {
+		defaultSrc: ["'self'"],
+		scriptSrc: ["'self'", "'unsafe-inline'"],
+	},
+}))
 
 App.all("/", (Request, Respond) => {
 	Respond.end("Roblox WS Execution")
