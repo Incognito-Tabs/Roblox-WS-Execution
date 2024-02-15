@@ -59,7 +59,7 @@ Managing multiple accounts and executing code in various game instances has neve
 
 For a visual walkthrough of the installation process, watch this video:
 
-   [![Installation Video](https://img.youtube.com/vi/IT8jH5-UlI4/mqdefault.jpg)](https://www.youtube.com/watch?v=IT8jH5-UlI4)
+   [![Installation Video](https://img.youtube.com/vi/IT8jH5-UlI4/mqdefault.jpg)](https://youtu.be/NBw_424FKIY)
 
 ## Effortless Usage
 
