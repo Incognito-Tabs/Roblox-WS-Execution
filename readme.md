@@ -12,7 +12,7 @@ To harness the power of Roblox WS Execution, follow these simple steps:
 
 2. Ensure you have a Roblox executor that supports WebSocket connections.
 
-3. Create a new text file within your executor's autoexec folder. The filename is unimportant.
+3. Create a new text file within your executor's autoexec folder. The filename is unimportant. (If you are on RO-EXEC, Krampus execute it manually)
 
    ![Create New Text File](https://i.imgur.com/rkpnrDq.png)
 
