@@ -69,7 +69,7 @@ Roblox WS Execution's user-friendly interface makes execution a breeze:
 
 2. Wait for the game to load completely.
 
-3. Locate the "WS Execute" button on the status bar or a similar location within the executor's interface.
+3. Locate the "WS Execute" button on the status bar.
 
    ![WS Execute Button](https://i.imgur.com/ipzfCf2.png)
 
