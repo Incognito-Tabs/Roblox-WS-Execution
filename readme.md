@@ -59,7 +59,7 @@ Managing multiple accounts and executing code in various game instances has neve
 
 For a visual walkthrough of the installation process, watch this video: (You dont need to execute manually, you can put it in auto-exec)
 
-   [![Installation Video](https://img.youtube.com/vi/IT8jH5-UlI4/mqdefault.jpg)](https://youtu.be/NBw_424FKIY)
+   [![Installation Video](https://img.youtube.com/vi/SjIoPKN8MMQ/mqdefault.jpg)](https://www.youtube.com/watch?v=SjIoPKN8MMQ)
 
 ## Effortless Usage
 
