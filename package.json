@@ -3,7 +3,7 @@
   "displayName": "Roblox WS Execution",
   "description": "Code Exection from VSC from any Executor.",
   "publisher": "incognito-developer",
-  "version": "1.6.0",
+  "version": "1.6.5",
   "icon": "WS.png",
   "engines": {
     "vscode": "^1.81.0"
