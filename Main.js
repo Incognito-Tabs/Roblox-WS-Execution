@@ -87,13 +87,17 @@ function Activated(Context, Status) {
 
 				Context.globalState.update("CheckIfOpened", true)
 			})
-
-			Context.globalState.update("CheckIfOpened", true)
 		})
 	}
 
 	Context.subscriptions.push(VSCode.commands.registerCommand("roblox-ws-server.debug", () => {
 		VSCode.window.showInformationMessage("Roblox WS Execution Running.")
+	}))
+
+	Context.subscriptions.push(VSCode.commands.registerCommand("roblox-ws-server.resetglobals", () => {
+		VSCode.window.showInformationMessage("Reset The Globals.")
+
+		Context.globalState.update("CheckIfOpened", false)
 	}))
 
 	Context.subscriptions.push(VSCode.commands.registerCommand("roblox-ws-server.execute", () => {

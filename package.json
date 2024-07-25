@@ -24,6 +24,10 @@
       {
         "command": "roblox-ws-server.debug",
         "title": "RWS: Debug"
+      },
+      {
+        "command": "roblox-ws-server.resetglobals",
+        "title": "RWS: Reset"
       }
     ]
   },
