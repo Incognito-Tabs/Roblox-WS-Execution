@@ -12,9 +12,9 @@
     "Other"
   ],
   "activationEvents": [
-    "onLanguage:lua"
+    "onStartupFinished"
   ],
-  "main": "./out/extension.js",
+  "main": "./Main.js",
   "contributes": {
     "commands": [
       {
@@ -29,36 +29,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/lncoognito/Roblox-WS.git"
+    "url": "git@github.com:Incognito-Tabs/Roblox-WS-Execution.git"
   },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
+  "scripts": {},
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-ws": "^5.0.2",
+    "helmet": "^7.1.0"
   },
   "devDependencies": {
-    "@types/mocha": "^10.0.1",
-    "@types/node": "16.x",
-    "@types/vscode": "^1.81.0",
-    "@types/websocket": "^1.0.6",
-    "@typescript-eslint/eslint-plugin": "^6.4.1",
-    "@typescript-eslint/parser": "^6.4.1",
-    "@vscode/test-electron": "^2.3.4",
-    "eslint": "^8.47.0",
-    "glob": "^10.3.3",
-    "mocha": "^10.2.0",
-    "typescript": "^5.1.6"
-  },
-  "dependencies": {
-    "@types/express": "^4.17.17",
-    "@types/express-ws": "^3.0.1",
-    "express": "^4.18.2",
-    "express-ws": "^5.0.2",
-    "helmet": "^7.0.0",
-    "vsce": "^2.15.0",
-    "websocket": "^1.0.34"
+    "vscode": "^1.1.37"
   }
 }
