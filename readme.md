@@ -37,7 +37,7 @@ To harness the power of Roblox WS Execution, follow these simple steps:
 
 Roblox WS Execution goes above and beyond by offering seamless support for multiple accounts. If you engage in multi-Roblox instances and manage multiple accounts, this feature is tailored for you. With Roblox WS Execution's multi-account support, you can effortlessly execute code across various game instances while maintaining a smooth and organized experience.
 
-* Please note that multiple account support only works with Electron since no other executors currently support multiple Roblox instances [to my knowledge].
+Please note that multiple account support only works with executors that support multiple roblox instances.
 
 ### Using Multi-Account Support
 
