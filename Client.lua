@@ -36,10 +36,10 @@ local Main							= function()
         Closed						= true
     end)
 
-    repeat task.wait() until Closed
+    repeat wait() until Closed
 end
 
-while task.wait(1) do
+while wait(1) do
 	local Success, Error			= pcall(Main)
 
 	if not Success then print(Error) end
